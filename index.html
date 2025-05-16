@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>دعم غزة - مساعدة المحتاجين</title>
+  <title>Gaza Support - Help the Needy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
@@ -31,6 +31,8 @@
       border-radius: 9999px;
       box-shadow: 0 0 15px #d4af37cc;
       transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
     }
     .btn-gold:hover {
       box-shadow: 0 0 25px #f9d976ff;
@@ -41,29 +43,31 @@
 <body class="min-h-screen flex flex-col">
 
   <header class="text-center py-16 border-b border-gold-gradient">
-    <h1 class="text-6xl gold-gradient glow-gold mb-4">دعم غزة</h1>
-    <p class="text-xl max-w-xl mx-auto text-yellow-100">لا يوجد طعام يكفي للجميع، فلنمد يد العون لمن يحتاج</p>
+    <h1 class="text-6xl gold-gradient glow-gold mb-4">Gaza Support</h1>
+    <p class="text-xl max-w-xl mx-auto text-yellow-100">There is not enough food for everyone, let's extend a helping hand to those in need</p>
   </header>
 
   <main class="flex-grow max-w-4xl mx-auto px-6 py-12">
     <div class="overflow-hidden rounded-3xl shadow-lg shadow-yellow-500/50 mb-12">
       <img
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-        alt="طفل محتاج لا يوجد طعام"
+        src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+        alt="Person in need reaching out for help"
         class="w-full object-cover h-96"
       />
     </div>
 
     <section class="bg-gradient-to-r from-yellow-900/80 via-yellow-700/70 to-yellow-900/80 p-8 rounded-2xl shadow-lg shadow-yellow-600/70">
       <p class="text-lg leading-relaxed text-yellow-100">
-        في ظل الظروف الصعبة التي تمر بها غزة، الكثير من العائلات تعاني من نقص الغذاء. نهدف إلى تقديم الدعم والمساعدة لمن هم بأمس الحاجة إليه.  
+        Amidst the harsh conditions in Gaza, many families suffer from food shortages. Our goal is to provide support and assistance to those who need it most.
       </p>
-      <button class="btn-gold mt-8 mx-auto block">ساهم الآن</button>
+      <button onclick="window.open('https://gofund.me/92f4e6bc', '_blank')" class="btn-gold mt-8 mx-auto block">
+        Donate Now
+      </button>
     </section>
   </main>
 
   <footer class="text-center py-6 text-yellow-500 border-t border-yellow-700">
-    جميع الحقوق محفوظة © 2025
+    © 2025 All Rights Reserved
   </footer>
 
 </body>
